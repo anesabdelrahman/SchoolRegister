@@ -195,7 +195,16 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="BusinessModels\Address.cs" />
+    <Compile Include="Common\IBaseEntity.cs" />
+    <Compile Include="Common\IEntityId.cs" />
+    <Compile Include="BusinessModels\Contact.cs" />
+    <Compile Include="BusinessModels\EmergencyContact.cs" />
+    <Compile Include="BusinessModels\Teacher.cs" />
+    <Compile Include="Common\Gender.cs" />
+    <Compile Include="BusinessModels\Parent.cs" />
     <Compile Include="BusinessModels\Student.cs" />
+    <Compile Include="Common\RelationshipToChild.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />

@@ -1,12 +1,12 @@
-﻿using Microsoft.Owin.BuilderProperties;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using SchoolRegister.Common;
 
 namespace SchoolRegister.BusinessModels
 {
-    public class Student
+    public class Student : IEntityId, IBaseEntity
     {
-        public Guid StudentId { get; set; }
+        public Guid Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string MiddleName { get; set; }
@@ -16,33 +16,9 @@ namespace SchoolRegister.BusinessModels
         public string MedicalInfo { get; set; }
         public Gender Gender { get; set; }
         public bool CanBePhotographed { get; set; }
-
         public IEnumerable<Parent> Parents { get; set; }
         public Address Address { get; set; }
 
 
-    }
-
-    public class Parent
-    {
-        public Guid ParentId { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string MiddleName { get; set; }
-        public string OriginalNationality { get; set; }
-        public Contact Contact { get; set; }
-        public Address Address { get; set; }
-
-    }
-
-    public class Contact
-    {
-
-    }
-
-    public enum Gender
-    {
-        Male = 1,
-        Female = 2
     }
 }
