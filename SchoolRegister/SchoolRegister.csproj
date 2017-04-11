@@ -196,6 +196,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="BusinessModels\Address.cs" />
+    <Compile Include="BusinessModels\Exam.cs" />
+    <Compile Include="BusinessModels\ExamResults.cs" />
+    <Compile Include="BusinessModels\Subject.cs" />
+    <Compile Include="Common\ExamType.cs" />
     <Compile Include="Common\IBaseEntity.cs" />
     <Compile Include="Common\IEntityId.cs" />
     <Compile Include="BusinessModels\Contact.cs" />

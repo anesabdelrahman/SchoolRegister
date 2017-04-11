@@ -12,6 +12,6 @@ namespace SchoolRegister.BusinessModels
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string MiddleName { get; set; }
-        public Contact Contact { get; set; }
+        public  Contact Contact { get; set; }
     }
 }

@@ -16,7 +16,7 @@ namespace SchoolRegister.BusinessModels
         public string MedicalInfo { get; set; }
         public Gender Gender { get; set; }
         public bool CanBePhotographed { get; set; }
-        public IEnumerable<Parent> Parents { get; set; }
+        public virtual IEnumerable<Parent> Parents { get; set; }
         public Address Address { get; set; }
 
 
