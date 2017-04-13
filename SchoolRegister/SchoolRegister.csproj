@@ -201,7 +201,6 @@
     <Compile Include="BusinessModels\Subject.cs" />
     <Compile Include="Common\ExamType.cs" />
     <Compile Include="Common\IBaseEntity.cs" />
-    <Compile Include="Common\IEntityId.cs" />
     <Compile Include="BusinessModels\Contact.cs" />
     <Compile Include="BusinessModels\EmergencyContact.cs" />
     <Compile Include="BusinessModels\Teacher.cs" />

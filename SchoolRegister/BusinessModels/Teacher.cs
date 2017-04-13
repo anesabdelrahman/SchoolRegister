@@ -1,20 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using SchoolRegister.Common;
 
 namespace SchoolRegister.BusinessModels
 {
-    public class Teacher : IEntityId, IBaseEntity
+    public class Teacher : IBaseEntity
     {
-        public Guid Id { get; set; }
+        public int TeacherId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string MiddleName { get; set; }
         public Contact Contact { get; set; }
 
-        public virtual ICollection<Student> Students { get; set; }
+        public ICollection<Student> Students { get; set; }
+
+        public Teacher()
+        {
+            Students = new List<Student>();
+        }
 
     }
 }

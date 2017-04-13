@@ -1,13 +1,16 @@
-using System;
+using System.ComponentModel.DataAnnotations;
 using SchoolRegister.Common;
 
 namespace SchoolRegister.BusinessModels
 {
-    public class Parent : IEntityId, IBaseEntity
+    public class Parent : IBaseEntity
     {
-        public Guid Id { get; set; }
+        public int ParentId { get; set; }
 
+        [Required]
         public string FirstName { get; set; }
+
+        [Required]
         public string LastName { get; set; }
         public string MiddleName { get; set; }
         public string OriginalNationality { get; set; }

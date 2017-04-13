@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using SchoolRegister.Common;
 
 namespace SchoolRegister.BusinessModels
 {
-    public class Exam : IEntityId
+    public class Exam
     {
-        public Guid Id { get; set; }
+        public int ExamId { get; set; }
         public string Name { get; set; }
         public DateTime ExamDate { get; set; }
         public ExamType ExamType { get; set; }

@@ -1,11 +1,8 @@
-using System;
-using SchoolRegister.Common;
-
 namespace SchoolRegister.BusinessModels
 {
-    public class Address : IEntityId
+    public class Address
     {
-        public Guid Id { get; set; }
+        public int AddressId { get; set; }
         public string FirstLine { get; set; }
         public string SecondLine { get; set; }
         public string ThirdLine { get; set; }
