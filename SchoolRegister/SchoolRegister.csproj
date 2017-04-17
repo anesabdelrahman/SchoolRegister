@@ -205,18 +205,9 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="BusinessModels\Address.cs" />
-    <Compile Include="BusinessModels\Exam.cs" />
-    <Compile Include="BusinessModels\ExamResults.cs" />
-    <Compile Include="BusinessModels\Subject.cs" />
     <Compile Include="Common\ExamType.cs" />
     <Compile Include="Common\IBaseEntity.cs" />
-    <Compile Include="BusinessModels\Contact.cs" />
-    <Compile Include="BusinessModels\EmergencyContact.cs" />
-    <Compile Include="BusinessModels\Teacher.cs" />
     <Compile Include="Common\Gender.cs" />
-    <Compile Include="BusinessModels\Parent.cs" />
-    <Compile Include="BusinessModels\Student.cs" />
     <Compile Include="Common\RelationshipToChild.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -224,6 +215,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704172052577_first update.cs" />
+    <Compile Include="Migrations\201704172052577_first update.Designer.cs">
+      <DependentUpon>201704172052577_first update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\BusinessModels\Address.cs" />
     <Compile Include="Models\BusinessModels\Contact.cs" />
@@ -280,7 +276,9 @@
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -323,6 +321,11 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201704172052577_first update.resx">
+      <DependentUpon>201704172052577_first update.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
