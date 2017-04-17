@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using SchoolRegister.Common;
 using System.ComponentModel.DataAnnotations;
+using SchoolRegister.Common;
 
-namespace SchoolRegister.BusinessModels
+namespace SchoolRegister.Models.BusinessModels
 {
     public class Student : IBaseEntity
     {

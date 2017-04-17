@@ -1,6 +1,6 @@
 using SchoolRegister.Common;
 
-namespace SchoolRegister.BusinessModels
+namespace SchoolRegister.Models.BusinessModels
 {
     public class Contact
     {

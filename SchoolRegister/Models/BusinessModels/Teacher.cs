@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using SchoolRegister.Common;
 
-namespace SchoolRegister.BusinessModels
+namespace SchoolRegister.Models.BusinessModels
 {
     public class Teacher : IBaseEntity
     {

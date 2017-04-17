@@ -1,4 +1,4 @@
-namespace SchoolRegister.BusinessModels
+namespace SchoolRegister.Models.BusinessModels
 {
     public class Address
     {
