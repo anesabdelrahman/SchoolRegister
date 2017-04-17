@@ -18,6 +18,7 @@ namespace SchoolRegister.Models.BusinessModels
         public string MiddleName { get; set; }
 
         [Required]
+        [DataType(DataType.Date)]
         public DateTime DateOfBirth { get; set; }
         public bool ReceivedBooks { get; set; }
 
