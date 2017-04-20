@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Students Register</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -17,8 +17,11 @@
         <th>
             @Html.DisplayNameFor(model => model.LastName)
         </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.MiddleName)
+            </th>*@
         <th>
-            @Html.DisplayNameFor(model => model.MiddleName)
+            @Html.DisplayNameFor(model => model.Gender)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.DateOfBirth)
@@ -26,15 +29,13 @@
         <th>
             @Html.DisplayNameFor(model => model.ReceivedBooks)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.EnglishSchool)
-        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.EnglishSchool)
+            </th>*@
         <th>
             @Html.DisplayNameFor(model => model.MedicalInfo)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Gender)
-        </th>
+
         <th>
             @Html.DisplayNameFor(model => model.CanBePhotographed)
         </th>
@@ -49,8 +50,11 @@
         <td>
             @Html.DisplayFor(modelItem => item.LastName)
         </td>
-        <td>
+        @*<td>
             @Html.DisplayFor(modelItem => item.MiddleName)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.DateOfBirth)
@@ -58,15 +62,13 @@
         <td>
             @Html.DisplayFor(modelItem => item.ReceivedBooks)
         </td>
-        <td>
+        @*<td>
             @Html.DisplayFor(modelItem => item.EnglishSchool)
-        </td>
+        </td>*@
         <td>
             @Html.DisplayFor(modelItem => item.MedicalInfo)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Gender)
-        </td>
+       
         <td>
             @Html.DisplayFor(modelItem => item.CanBePhotographed)
         </td>
